@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <!-- Primary Meta Tags -->
+  <title>Web Design - Diseño Web | Bobsala | (322) 244 1114</title>
+  <meta name="title" content="Web Design - Diseño Web | Bobsala | (322) 244 1114">
+  <meta name="description" content="Crece tu negocio con diseño de páginas web responsive. Atrae a una mayor cantidad de visitas y conviértelos en clientes leales. Contáctanos para saber como podemos volvernos tu propia agencia de marketing en línea.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bobsala.com/">
+  <meta property="og:title" content="Web Design - Diseño Web | Bobsala | (322) 244 1114">
+  <meta property="og:description" content="Crece tu negocio con diseño de páginas web responsive. Atrae a una mayor cantidad de visitas y conviértelos en clientes leales. Contáctanos para saber como podemos volvernos tu propia agencia de marketing en línea.">
+  <meta property="og:image" content="">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://bobsala.com/">
+  <meta property="twitter:title" content="Web Design - Diseño Web | Bobsala | (322) 244 1114">
+  <meta property="twitter:description" content="Crece tu negocio con diseño de páginas web responsive. Atrae a una mayor cantidad de visitas y conviértelos en clientes leales. Contáctanos para saber como podemos volvernos tu propia agencia de marketing en línea.">
+  <meta property="twitter:image" content="">
+  
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/2d4333cfef.js" crossorigin="anonymous"></script>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/Bobsala-Web-apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/Bobsala-Web-favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/Bobsala-Web-favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+
+<!-- partial:index.partial.html -->
+<script type="x-shader/x-vertex" id="vertexshader">
+
+  attribute float size;
+  attribute vec3 customColor;
+  varying vec3 vColor;
+
+  void main() {
+
+    vColor = customColor;
+    vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+    gl_PointSize = size * ( 300.0 / -mvPosition.z );
+    gl_Position = projectionMatrix * mvPosition;
+
+  }
+
+</script>
+<script type="x-shader/x-fragment" id="fragmentshader">
+
+ uniform vec3 color;
+ uniform sampler2D pointTexture;
+
+ varying vec3 vColor;
+
+ void main() {
+
+   gl_FragColor = vec4( color * vColor, 1.0 );
+   gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+
+ }
+</script>
+<div id="magic"></div>
+<!-- Logo and Nav Start -->
+<div class="playground">
+  <div class="topPosition">
+    <a class="mobile-trigger">Menu</a>
+    <div class="nav-bobsala">
+      <div class="nav-elements">
+          <a href="https://bio.link/bobsaladev" target="_blank"><i class="fas fa-check"></i>Formularios</a>
+        	<a href="https://calendly.com/bobsaladev" target="_blank">Agendar Cita</a>
+        	<a href="https://bobsaladev.substack.com/" target="_blank">Newsletter</a>
+        	<a href="https://api.whatsapp.com/send?phone=523222441114" target="_blank">WhatsApp</a>
+      </div>
+      <div class="mobile-nav-elements">
+        <a href="https://bio.link/bobsaladev" target="_blank">Formularios</a>
+        <a href="https://calendly.com/bobsaladev" target="_blank">Agendar Cita</a>
+        <a href="https://bobsaladev.substack.com/" target="_blank">Newsletter</a>
+        <a href="https://api.whatsapp.com/send?phone=523222441114" target="_blank">WhatsApp</a>
+    </div>
+    </div>
+  </div>
+  <div class="bottomPosition">
+     <a href="." target="_self" class="boblogo">
+       <img src="./img/Bobsala Logo Homepage White.svg" alt="">
+      </a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+<!-- Logo and Nav Ends -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js'></script><script  src="./script.js"></script> 
+
+</body>
+</html>

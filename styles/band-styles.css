@@ -1,0 +1,25 @@
+:root {
+  --color-primary: red;
+}
+.row {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.row #row- .row.col-one {
+  width: 100%;
+}
+.row.col-50 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.row.col-50 .col-50-1 {
+  width: 50%;
+  margin-right: 50px;
+}
+.row.col-50 .col-50-2 {
+  width: 50%;
+}
+.band-hero-alt::before {
+  content: "";
+}

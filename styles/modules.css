@@ -1,0 +1,26 @@
+.heading-module {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.heading-module.text-center .heading,
+.heading-module.text-center .sub-heading {
+  text-align: center;
+}
+.heading-module.text-left {
+  margin-left: 0;
+}
+.heading-module.text-left .heading,
+.heading-module.text-left .sub-heading {
+  text-align: left;
+}
+.heading-module.text-right {
+  margin-right: 0;
+}
+.heading-module.text-right .heading,
+.heading-module.text-right .sub-heading {
+  text-align: right;
+}
+.img-main {
+  display: block;
+  margin: 0 auto;
+}
